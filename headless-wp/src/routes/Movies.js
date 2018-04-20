@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../styles/Movie.css';
 
 class Movie extends Component {
   constructor() {
@@ -20,8 +20,8 @@ componentDidMount() {
   }
 render() {
     let movies = this.state.movies.map((movie, index) => {
-      return <div className="App-div" key={index}>
-        <img className="App-img" src={movie._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} />
+      return <div className="Movie-div" key={index}>
+        <img className="Movie-img" src={movie._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} />
         <p><strong>Title:</strong> {movie.title.rendered}</p>
         <p><strong>Release Year:</strong> {movie.acf.release_year}</p>
         <p><strong>Rating:</strong> {movie.acf.rating}</p>
@@ -29,8 +29,8 @@ render() {
       </div>
     });
 return (
-      <div className="App">
-        <h2 className="App-title">Movies</h2>
+      <div className="Movie">
+        <h2 className="Movie-title">Movies</h2>
         {movies}
       </div>
     )

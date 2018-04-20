@@ -1,0 +1,81 @@
+.Index-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  font-size: 2.5em;
+  font-family: fantasy;
+  /* text-align: center; */
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #009dff;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.App {
+  background-image: url("https://i.imgur.com/mAUhuRN.png");
+  clear: both;
+  display: table;
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: 'Ewert', cursive;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-img {
+  /* float: left; */
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.App-div {
+  background-color: #ebedf1;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  border: 5px #0000002e solid;
+  border-radius: 10px;
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

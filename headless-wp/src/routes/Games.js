@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../style.css';
+import '../styles/Game.css';
 
 class Game extends Component {
   constructor() {
@@ -20,8 +20,8 @@ componentDidMount() {
   }
 render() {
     let games = this.state.games.map((game, index) => {
-      return <div className="App-div" key={index}>
-        <img className="App-img" src={game._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} />
+      return <div className="Game-div" key={index}>
+        <img className="Game-img" src={game._embedded['wp:featuredmedia'][0].media_details.sizes.large.source_url} />
         <p><strong>Title:</strong> {game.title.rendered}</p>
         <p><strong>Release Year:</strong> {game.acf.release_year}</p>
         <p><strong>imdb Rating:</strong> {game.acf.rating}</p>
@@ -29,8 +29,8 @@ render() {
       </div>
     });
 return (
-      <div className="App">
-        <h2 className="App-title">Games</h2>
+      <div className="Game">
+        <h2 className="Game-title">Games</h2>
         {games}
       </div>
     )
