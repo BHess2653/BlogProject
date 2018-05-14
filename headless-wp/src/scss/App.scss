@@ -1,39 +1,13 @@
-.Index-header {
-  background-color: #222;
-  height: 50px;
-  padding: 20px;
-  color: white;
-  font-size: 2.5em;
-  font-family: fantasy;
-  /* text-align: center; */
-}
-
-a:link {
-    text-decoration: none;
-    color: white;
-}
-
-a:visited {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    text-decoration: none;
-    color: #009dff;
-}
-
-a:active {
-    text-decoration: none;
-    color: white;
-}
+@import "var";
+@import "header";
+@import "movies";
+@import "games";
+@import "home";
 
 .App {
-  background-image: url("https://i.imgur.com/mAUhuRN.png");
+  background-image: url("https://i.imgur.com/xZpxJgV.png");
   clear: both;
   display: table;
-  height: -webkit-fill-available;
-  width: -webkit-fill-available;
 }
 
 .App-logo {
@@ -51,7 +25,7 @@ a:active {
 .App-title {
   font-size: 2.5em;
   text-align: center;
-  font-family: 'Ewert', cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .App-intro {
