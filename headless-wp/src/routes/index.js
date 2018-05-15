@@ -16,10 +16,10 @@ export default () => (
       </div>
 
       <Switch>
-        <Route path='/' exact render={props => <Home {...props} />} />
-        <Route path='/home' exact component={Home} />
-        <Route path='/games' exact component={Game} />
-        <Route path='/movies' exact component={Movie} />
+        <Route path="/" exact render={props => <Home {...props} />} />
+        <Route path="/home" exact component={Home} />
+        <Route path="/games" exact component={Game} />
+        <Route path="/movies" exact component={Movie} />
       </Switch>
     </div>
   </BrowserRouter>
