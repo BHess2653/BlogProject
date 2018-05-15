@@ -23,5 +23,9 @@
     "build": "react-scripts build",
     "test": "mocha",
     "eject": "react-scripts eject"
+  },
+  "engines": {
+    "node": "v8.8.1",
+    "npm": "3.10.3"
   }
 }
